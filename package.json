@@ -22,5 +22,8 @@
   "devDependencies": {
     "electron-installer-dmg": "^0.1.1",
     "electron-prebuilt": "^1.2.0"
+  },
+  "dependencies": {
+    "time-ago": "^0.1.0"
   }
 }

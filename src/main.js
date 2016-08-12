@@ -6,7 +6,10 @@ var startTime = Date.now();
 
 var domNode = document.querySelector("#timelog");
 
+
+var ta = require('time-ago')();
+
 window.setInterval(function () {
   //This will be called per minute
-  domNode.innerHTML = Date.now() - startTime;
+  domNode.innerHTML = ta.ago(startTime).replace("ago", "");
 }, 1000);
